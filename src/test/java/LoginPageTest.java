@@ -24,13 +24,13 @@ public class LoginPageTest {
 
     @Test
     public void loginTest() {
-        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOf(log.logout));
-        assertTrue(log.logoutIsDisplayed());
+        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOf(log.findLogout()));
+        assertTrue(log.findLogout().isDisplayed());
     }
 
     @Test
     public void logoutTest() {
-        log.logout.click();
+        log.logoutClick();
         Assert.assertTrue(log.loginIsDisplayed());
     }
 
