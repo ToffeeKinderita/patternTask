@@ -1,41 +1,53 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Issue;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertTrue;
 
-public class LoginPageTest {
-    private WebDriver driver = new ChromeDriver();
-    private LoginPage log = new LoginPage(driver);
+
+public class LoginPageTest extends BaseClass {
+    private WebDriver dr = getDriver();
+    private LoginPage log;
+
 
     @BeforeClass
     public void start() {
-        driver.get(LoginPage.URLMAIL);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        dr = new ChromeDriver();
+        log = new LoginPage(dr);
+        dr.manage().window().maximize();
+        dr.get(LoginPage.URL_LOGIN_PAGE);
+        dr.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        log.get();
         log.login();
     }
 
+    @Feature("Login")
+    @Description("Test checks login functionality to Mail.ru")
+    @Issue("1")
     @Test
     public void loginTest() {
-        new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOf(log.findLogout()));
-        assertTrue(log.findLogout().isDisplayed());
+        assertTrue(log.isLoggedIn(), "Failed to login");
     }
 
+    @Ignore
+    @Feature("Logout")
+    @Description("Test checks logout functionality")
+    @Issue("2")
     @Test
     public void logoutTest() {
-        log.logoutClick();
-        Assert.assertTrue(log.loginIsDisplayed());
+        HomePage home = new HomePage(dr);
+        home.logoutClick();
+        Assert.assertTrue(log.loginIsDisplayed(), "Failed to logout");
     }
 
     @AfterClass
     public void close() {
-        driver.quit();
+        dr.quit();
     }
 }

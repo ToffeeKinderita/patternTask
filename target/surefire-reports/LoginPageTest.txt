@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: LoginPageTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 7.987 s <<< FAILURE! - in LoginPageTest
+start(LoginPageTest)  Time elapsed: 7.428 s  <<< FAILURE!
+java.lang.NullPointerException
+	at LoginPageTest.start(LoginPageTest.java:34)
+
