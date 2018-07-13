@@ -1,0 +1,78 @@
+{
+  "uid" : "4be274fc8d29f8d9",
+  "name" : "loginTest",
+  "fullName" : "LoginPageTest.loginTest",
+  "historyId" : "a56533e1db9a15cf96b53fa945da0ba5",
+  "time" : {
+    "start" : 1531511821042,
+    "stop" : 1531511821044,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "statusDetails" : {
+    "message" : "java.lang.NullPointerException",
+    "trace" : "java.lang.NullPointerException\r\n\tat LoginPage.isLoaded(LoginPage.java:31)\r\n\tat org.openqa.selenium.support.ui.LoadableComponent.get(LoadableComponent.java:46)\r\n\tat LoginPageTest.start(LoginPageTest.java:34)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)\r\n\tat org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)\r\n\tat org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)\r\n\tat org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)\r\n\tat org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\r\n\tat org.testng.TestRunner.run(TestRunner.java:505)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\r\n\tat org.testng.TestNG.run(TestNG.java:1017)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)\r\n",
+    "flaky" : false
+  },
+  "description" : "Test checks login functionality to Mail.ru",
+  "descriptionHtml" : "<p>Test checks login functionality to Mail.ru</p>",
+  "beforeStages" : [ {
+    "name" : "start",
+    "time" : {
+      "start" : 1531511814393,
+      "stop" : 1531511820922,
+      "duration" : 6529
+    },
+    "status" : "broken",
+    "statusDetails" : {
+      "message" : "java.lang.NullPointerException",
+      "trace" : "java.lang.NullPointerException\r\n\tat LoginPage.isLoaded(LoginPage.java:31)\r\n\tat org.openqa.selenium.support.ui.LoadableComponent.get(LoadableComponent.java:46)\r\n\tat LoginPageTest.start(LoginPageTest.java:34)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)\r\n\tat org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)\r\n\tat org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)\r\n\tat org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)\r\n\tat org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\r\n\tat org.testng.TestRunner.run(TestRunner.java:505)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\r\n\tat org.testng.TestNG.run(TestNG.java:1017)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)\r\n",
+      "flaky" : false
+    },
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "LoginPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "LoginPageTest"
+  }, {
+    "name" : "host",
+    "value" : "BAZYLKOT7"
+  }, {
+    "name" : "thread",
+    "value" : "10068@BAZYLKOT7.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "1",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

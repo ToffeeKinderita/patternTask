@@ -1,0 +1,72 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 1,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 1
+  },
+  "time" : {
+    "minDuration" : 2,
+    "maxDuration" : 2,
+    "sumDuration" : 2,
+    "start" : 1531511821042,
+    "stop" : 1531511821044,
+    "duration" : 2
+  },
+  "children" : [ {
+    "uid" : "476ab025b72dd58d",
+    "name" : "Login",
+    "time" : {
+      "minDuration" : 2,
+      "maxDuration" : 2,
+      "sumDuration" : 2,
+      "start" : 1531511821042,
+      "stop" : 1531511821044,
+      "duration" : 2
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "1e543ce8b6024d17",
+      "name" : "Default story",
+      "time" : {
+        "minDuration" : 2,
+        "maxDuration" : 2,
+        "sumDuration" : 2,
+        "start" : 1531511821042,
+        "stop" : 1531511821044,
+        "duration" : 2
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "4be274fc8d29f8d9",
+        "name" : "loginTest",
+        "time" : {
+          "start" : 1531511821042,
+          "stop" : 1531511821044,
+          "duration" : 2
+        },
+        "status" : "skipped",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}
